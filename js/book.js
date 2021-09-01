@@ -1,0 +1,1 @@
+document.getElementById('error-massage').style.display = 'none'
