@@ -25,18 +25,31 @@
                 <h5 class=" pt-5 text-center">One web page for every book.</h5>
             </div>
             <div class="input-group mb-3 w-50 mx-auto">
-                <input id="search-book" type="text" class="form-control" placeholder="Search the team you want"
+                <input id="search-input" type="text" class="form-control" placeholder="Search book name"
                     aria-label="Recipient's username" aria-describedby="button-addon2">
-                <button onclick="searchBook()" class="btn btn-secondary" type="button" id="book-search">Search</button>
+                
+                <button onclick="searchBook()" class="btn btn-outline-info" type="button" id="book-search">Search</button>
             </div> 
             
-             <!-- eror and spinner -->
-            <div>
-                <h2 id="error-message" class="bg-warning text-center text-white"> Insert a valid book name</h2>
-                <div id="spinner" class="spinner-grow" style="margin-left: 50%;" role="status">
+            <!--  eror and spinner -->
+             <div>
+                <h2 id="error-message" class="text-center text-danger"> Insert a valid book name</h2>
+
+                <!-- spinner  -->
+                <div id="spinner" class="spinner-border text-info" style="margin-left: 50%;" role="status">
                     <span class="visually-hidden">Loading...</span>
                 </div>
-            </div>
+
+            </div> 
+
+            <!-- //result Found -->
+            <h4 id="found-numbers" class=" text-success text-center p-2 fst-italic"></h4>
+            
+            <!-- serach result  -->
+            <div id="searchResult" class="row row-cols-1 row-cols-md-3 g-4"></div>
+           
+
+
        </div>
 
        
